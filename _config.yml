@@ -26,19 +26,19 @@ description: >- # used by seo meta and the atom feed
 url: "https://hwanginji.github.io/"
 
 github:
-  username: webs9919 # change to your github username
+  username: HwangInji # change to your github username
 
 twitter:
-  username: webs9919 # change to your twitter username
+  username: HwangInji # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: HwangInji
+  name: HwangInJi
   email: wownd456@naver.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/webs9919 # change to your twitter homepage
+    - https://twitter.com/HwangInJi # change to your twitter homepage
     - https://hwanginji.github.io/ # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
