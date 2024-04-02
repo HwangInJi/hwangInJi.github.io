@@ -14,7 +14,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: HwangInji # the main title
+title: HwangInJi # the main title
 
 tagline: Developer InJi
 
@@ -26,10 +26,10 @@ description: >- # used by seo meta and the atom feed
 url: "https://hwanginji.github.io/"
 
 github:
-  username: HwangInji # change to your github username
+  username: HwangInJi # change to your github username
 
 twitter:
-  username: HwangInji # change to your twitter username
+  username: HwangInJi # change to your twitter username
 
 social:
   # Change to your full name.
