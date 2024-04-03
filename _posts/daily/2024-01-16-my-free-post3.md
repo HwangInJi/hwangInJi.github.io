@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 와 블로그!!
-date: 2024-01-16 17:29 +0900
+title: 비온다...☔
+date: 2024-04-03 17:29 +0900
 description: 
 image: https://item.kakaocdn.net/do/dc9561970173c28a13654c3f14180b4bf43ad912ad8dd55b04db6a64cddaf76d
-category: 자유
+category: 일상
 tags: 
 published: true
 sitemap: true
