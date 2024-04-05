@@ -3,7 +3,7 @@ layout: post
 title: 프로그래밍 연산자 & 자료형
 date: 2024-04-05 17:29 +0900
 description: 자바스크립트 연산자와 자료형에 대해서 알아보기
-image: ../assets/Operator.jpg
+image: ../assets/operator.jpg
 category: 자바스크립트
 tags: 연산자 자료형 수식 산술 프로그래밍 데이터저장
 published: true
