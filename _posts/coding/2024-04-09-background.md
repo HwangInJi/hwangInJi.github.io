@@ -182,5 +182,63 @@ Image Sprit은 사용하는 여러 이미지들을 하나로 저장한 후 backg
   background-position: -80px 0; /* 스프라이트 이미지 내에서 contact 아이콘의 위치 */
 }
 ````
+<br />
+
 ## 10. 배경에 gradient 적용하기
+▶ CSS3에서는 배경에 gradient를 적용하여 다양한 효과를 줄 수 있으며, 형식에는 여러개가 있습니다.<br />
+아래는 예시들입니다.
+<br />
+① 기본형 : 기본형은 위에서 아래로 색상을 채워주며, 세로 방향입니다.
+
+````bash
+background: linear-gradient(red, yellow, green);
+````
+<br />
+② to top : 색상값 앞에 'to top'을 사용하면 시작위치가 아래에서 위로 변경됩니다.
+
+````bash
+background: linear-gradient(to top, red, yellow, green);
+````
+<br />
+③ to right / to left : 기본형인 세로 방향을 가로 방향으로 바꿀 경우 색상값 앞에 to right나 to left를 사용합니다.
+
+````bash
+background: linear-gradient(to right / to left, red, yellow, green);
+````
+<br />
+④ to bottom right : 사선 방향으로 변경할 경우 색상값 앞에 사용하면 되며, 좌측 상단->우측 하단 방향으로 책상이 채워집니다.
+
+````bash
+background: linear-gradient(to bottom right, red, yellow, green);
+````
+<br />
+⑤ edg : 각도를 변경할 경우 edg를 사용하여 원하는 각도 값을 사용합니다. 이 때 각도는 아래가 0°이며, 시계방향으로 돌아가며 채워집니다.
+
+````bash
+background: linear-gradient(200edg, red, yellow, green);
+````
+<br />
+⑥ 패턴 반복 : 일정한 패턴의 gradient를 반복시킬 경우 repeating-linear-gradient를 사용합니다.
+
+````bash
+background: repeating-linear-gradient(red, yellow, green);
+````
+<br />
+⑦ 타원형 : radial-gradient를 사용하면 원형으로 변경됩니다. 기본형은 타원형이며, 안쪽에서 바깥으로 색상이 채워집니다.
+
+````bash
+background: radial-gradient(red, yellow, green);
+````
+<br />
+⑧ 정원형 : 색상값 앞에 circle을 사용하면 타원형이 아닌 정원형으로 변경됩니다.
+
+````bash
+background: radial-gradient(circle, red, yellow, green);
+````
+<br />
+⑨ 색상 영역 변경 : 색상 옆에 %를 붙이면 원하는 영역으로 변경이 가능합니다.
+
+````bash
+background: radial-gradient(red 5%, yellow 10%, green 15%);
+````
 ## 11. multiple background
