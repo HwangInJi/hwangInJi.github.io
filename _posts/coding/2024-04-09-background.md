@@ -158,7 +158,7 @@ background-clip: border-box;
 ▶ 이미지가 많아지면 속도가 느려지는 단점을 보완하기 위해 사용하는 속성으로 아래와 같은 형식처럼 사용합니다.<br />
 Image Sprit은 사용하는 여러 이미지들을 하나로 저장한 후 background-position을 이용하여 잘라 사용합니다.
 
-```CSS
+````css
 .nav {
   display: flex;
 }
@@ -181,7 +181,7 @@ Image Sprit은 사용하는 여러 이미지들을 하나로 저장한 후 backg
 .contact {
   background-position: -80px 0; /* 스프라이트 이미지 내에서 contact 아이콘의 위치 */
 }
-```
+````
 
 🔔 위의 코드 예시는 sprites.png라는 이미지 스프라이트를 사용하여 네비게이션 메뉴 아이콘을 표현하고 있습니다.<br />
 각 아이콘은 background-position 속성을 사용하여 스프라이트 이미지 내에서의 위치를 지정하고 있으며, 각각의 링크 요소에는 스프라이트 이미지 내에서의 위치를 지정하고 있습니다.
@@ -256,7 +256,7 @@ background: radial-gradient(red 5%, yellow 10%, green 15%);
 ▶ CSS3에서는 여러 개의 배경 이미지를 동시에 적용할 수 있습니다.<br />
 배경 이미지의 위치, 반복 여부 등 개수만큼 지정이 가능하며 이 경우 먼저 기재된 이미지가 가장 앞에 배치되고 뒤로 갈수록 바닥에 배치됩니다.
 
-```CSS
+````css
 .container {
   height: 400px;
   background-image: url('background1.jpg'), url('background2.jpg'); /* 두 개의 배경 이미지를 설정 */
@@ -264,7 +264,7 @@ background: radial-gradient(red 5%, yellow 10%, green 15%);
   background-position: center, top right; /* 각 배경 이미지의 위치 설정 */
   background-repeat: no-repeat; /* 배경 이미지 반복 설정 */
 }
-```
+````
 
 🔔 위의 코드 예시는 .container 요소에 두 개의 배경 이미지를 설정하고 있습니다. 첫 번째 배경은 background1.jpg이고, 두 번째 배경은 background2.jpg입니다.<br />
 각 배경 이미지의 크기와 위치는 background-size, background-position 속성을 사용하여 설정하였으며, background-repeat: no-repeat;로 배경 이미지의 반복을 막았습니다.
