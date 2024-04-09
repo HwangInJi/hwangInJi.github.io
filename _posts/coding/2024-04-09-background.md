@@ -26,6 +26,7 @@ background-color: #abcdef;
 |:---:|:---:|
 |색상값|색상명, HEX값, RGB값, HSL값, RGBA값, HSLA값|
 |transparent|투명 (기본값)|
+
 <br />
 
 ## 02. background-image
@@ -40,6 +41,7 @@ background-image: url(img/bgimg.png);
 |:---:|:---:|
 |url(~)|이미지의 경로와 파일명을 기술함|
 |none|배경 이미지 없음 (기본값)|
+
 <br />
 
 ## 03. background-repeat
@@ -57,6 +59,7 @@ background-repeat: no-repeat;
 |repeat-y|배경 이미지를 세로로만 반복 배치|
 |space|배경 이미지를 반복하다가 마지막 이미지가 가로로 잘리지 않도록 배치하기 위해 이미지 사이가 벌어짐|
 |round|배경 이미지를 반복하다가 마지막 이미지가 세로로 잘리지 않도록 배치하기 위해 이미지가 납작하게 찌그러짐|
+
 <br />
 ▶ 만약 배경 이미지가 요소 안에 있는 콘텐츠들과 겹치지 않도록 하고 싶을 경우 padding속성과 함께 사용하면 됩니다.<br />
 ※ padding: 100px -> 상하, 좌우 모두 100px 만큼의 여백을 두라는 의미
@@ -79,6 +82,7 @@ background-position: 50% top;
 |:---:|:---:|
 |가로 위치|left, right, center, px값 등 (기본값: left)|
 |세로 위치|top, bottom, center(middle아님), px값, %값 등 (기본값: top)|
+
 <br />
 ▶ 만약 배경 이미지가 요소 안에 있는 콘텐츠들과 겹치지 않도록 하고 싶을 경우 padding속성과 함께 사용하면 됩니다.<br />
 ※ padding: 100px -> 상하, 좌우 모두 100px 만큼의 여백을 두라는 의미
@@ -100,6 +104,7 @@ background-attachment: fixed;
 |:---:|:---:|
 |scroll|배경 이미지가 화면을 스크롤하면 따라감 (기본값)|
 |fixed|배경 이미지가 화면을 스크롤해도 따라가지 않음|
+
 <br />
 
 ## 06. background-size
@@ -116,6 +121,7 @@ background-size: 120px(=가로) 90px(=세로);
 |background-size: auto;|배경 이미지를 원래 크기로 배치하고 남는 공간은 비움|
 |background-size: contain;|배경 이미지를 잘리지 않도록 배치하고 남는 공간은 비움|
 |background-size: cover;|배경 이미지를 빈 공간없이 요소에 꽉 채우고 나머지는 잘림|
+
 <br />
 
 ## 07. background-origin
@@ -130,6 +136,7 @@ background-origin: border-box;
 |border-box|배경 이미지가 테두리 좌측 상단 모퉁이에서 시작함|
 |padding-box|배경 이미지가 안여백의 좌측 상단 모퉁이에서 시작함 (기본값)|
 |content-box|배경 이미지가 콘텐츠의 좌측 상단부터 시작함|
+
 <br />
 
 ## 08. background-clip
@@ -144,6 +151,7 @@ background-clip: border-box;
 |border-box|배경이 테두리를 포함한 영역에 배치 (기본값)|
 |padding-box|배경이 테두리를 제외한 안쪽 영역에 배치|
 |content-box|배경이 안여백을 제외한 콘텐츠 영역에만 배치|
+
 <br />
 
 ## 09. Image Sprit
@@ -152,26 +160,26 @@ Image Sprit은 사용하는 여러 이미지들을 하나로 저장한 후 backg
 
 ````javascript
 .nav {
-display: flex;
+  display: flex;
 }
 
 .nav a {
-display: block;
-width: 40px;
-height: 40px;
-<span style="color:yellow">background-image: url('sprites.png');</span>
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url('sprites.png');
 }
 
 .home {
-<span style="color:yellow">background-position</span>: 0 0; /* 스프라이트 이미지 내에서 홈 아이콘의 위치 */
+  background-position: 0 0; /* 스프라이트 이미지 내에서 홈 아이콘의 위치 */
 }
 
 .about {
-<span style="color:yellow">background-position</span>: -40px 0; /* 스프라이트 이미지 내에서 about 아이콘의 위치 */
+  background-position: -40px 0; /* 스프라이트 이미지 내에서 about 아이콘의 위치 */
 }
 
 .contact {
-<span style="color:yellow">background-position</span>: -80px 0; /* 스프라이트 이미지 내에서 contact 아이콘의 위치 */
+  background-position: -80px 0; /* 스프라이트 이미지 내에서 contact 아이콘의 위치 */
 }
 ````
 ## 10. 배경에 gradient 적용하기
