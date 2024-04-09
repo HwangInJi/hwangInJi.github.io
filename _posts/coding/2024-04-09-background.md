@@ -3,7 +3,7 @@ layout: post
 title: 배경(background)
 date: 2024-04-09 17:29 +0900
 description: CSS 배경(background)에 대해서 알아보기
-image: ../assets/img/datatype.jpg
+image: ../assets/img/background.jpg
 category: CSS
 tags: CSS 배경 background
 published: true
