@@ -158,7 +158,7 @@ background-clip: border-box;
 ▶ 이미지가 많아지면 속도가 느려지는 단점을 보완하기 위해 사용하는 속성으로 아래와 같은 형식처럼 사용합니다.<br />
 Image Sprit은 사용하는 여러 이미지들을 하나로 저장한 후 background-position을 이용하여 잘라 사용합니다.
 
-````javascript
+````CSS
 .nav {
   display: flex;
 }
@@ -256,7 +256,7 @@ background: radial-gradient(red 5%, yellow 10%, green 15%);
 ▶ CSS3에서는 여러 개의 배경 이미지를 동시에 적용할 수 있습니다.<br />
 배경 이미지의 위치, 반복 여부 등 개수만큼 지정이 가능하며 이 경우 먼저 기재된 이미지가 가장 앞에 배치되고 뒤로 갈수록 바닥에 배치됩니다.
 
-````javascript
+````CSS
 .container {
   height: 400px;
   background-image: url('background1.jpg'), url('background2.jpg'); /* 두 개의 배경 이미지를 설정 */
