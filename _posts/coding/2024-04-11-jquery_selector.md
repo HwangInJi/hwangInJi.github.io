@@ -106,21 +106,21 @@ of-type이 붙은 선택자는 순차적이 아니더라도 동일한 요소면 
 
 |선택자 종류| |설명|
 |:---:|:---:|:---:|
-|:text|$("input:text")|<input type="text">요소를 선택함|
-|:password|$("input:password")|<input type="password">요소를 선택함|
-|:image|$("input:image")|<input type="image">요소를 선택함|
-|:file|$("input:file")|<input type="file">요소를 선택함|
-|:button|$(":button")|<input type="button">, <button>요소를 선택함|
-|:checkbox|$("input:checkbox")|<input type="checkbox">요소를 선택함|
-|:radio|$("input:radio")|<input type="radio">요소를 선택함|
-|:submit|$("input:submit")|<input type="submit">요소를 선택함|
-|:reset|$("input:reset")|<input type="reset">요소를 선택함|
-|:input|$(":input")|모든 <input>요소를 선택함|
-|:checked|$("input:checked")|<input>요소에 checked 속성이 있는 요소를 선택함|
-|:selected|$("option:selected")|<option>요소에 selected 속성이 있는 요소를 선택함|
-|:focus|$("input:focus")|현재 <input>요소에 focus가 있는 요소를 선택함|
-|:disabled|$("input:disabled")|<input>요소에 disabled속성이 있는 요소를 선택함|
-|:enabled|$("input:enabled")|<input>요소 중 enabled가 아닌 요소를 선택함|
+|:text|$("input:text")|/input type="text"/요소를 선택함|
+|:password|$("input:password")|/input type="password"/요소를 선택함|
+|:image|$("input:image")|/input type="image"/요소를 선택함|
+|:file|$("input:file")|/input type="file"/요소를 선택함|
+|:button|$(":button")|/input type="button"/, /button/요소를 선택함|
+|:checkbox|$("input:checkbox")|/input type="checkbox"/요소를 선택함|
+|:radio|$("input:radio")|/input type="radio"/요소를 선택함|
+|:submit|$("input:submit")|/input type="submit"/요소를 선택함|
+|:reset|$("input:reset")|/input type="reset"/요소를 선택함|
+|:input|$(":input")|모든 /input/요소를 선택함|
+|:checked|$("input:checked")|/input/요소에 checked 속성이 있는 요소를 선택함|
+|:selected|$("option:selected")|/option/요소에 selected 속성이 있는 요소를 선택함|
+|:focus|$("input:focus")|현재 /input/요소에 focus가 있는 요소를 선택함|
+|:disabled|$("input:disabled")|/input/요소에 disabled속성이 있는 요소를 선택함|
+|:enabled|$("input:enabled")|/input/요소 중 enabled가 아닌 요소를 선택함|
 
 <br />
 ⑤ 가시성 필터 선택자의 종류
