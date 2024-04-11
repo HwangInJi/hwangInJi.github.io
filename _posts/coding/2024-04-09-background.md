@@ -1,270 +1,311 @@
 ---
 layout: post
-title: 배경(background)
+title: BOX MODEL
 date: 2024-04-09 17:29 +0900
-description: CSS 배경(background)에 대해서 알아보기
-image: ../assets/img/background.jpg
+description: CSS BOX MODEL에 대해서 알아보기
+image: ../assets/img/boxmodel.jpg
 category: CSS
-tags: CSS 배경 background
+tags: CSS boxmodel BOXMODEL
 published: true
 sitemap: true
 ---
 
-# 배경(background)란?
-▶ 배경(background)이란 색상, 이미지, 반복여부, 위치, 고정여부 등의 기술적인 부분을 시각적 요소로 표현한 것을 말합니다.
-   CSS에서는 일반적으로 색상, 이미지, 그라디언트 등을 사용하여 요소를 꾸미는 데 사용됩니다.
+# BOX MODEL이란?
+▶ CSS의 Box Model(박스 모델)은 웹 페이지에서 요소(element)의 레이아웃(layout)을 정의하는 중요한 개념입니다.<br />
+여기서 BOX는 콘텐츠(content)가 자리하는 영역을 말하며, 여기에 나올 속성들은 안쪽 여백(padding), 테두리(border), 바깥 여백(margin)등 주로 블록 요소에서 적용됩니다.
 <br />
 
-## 01. background-color
-▶ 요소의 배경 색상을 지정하는 속성으로 아래와 같은 형식처럼 사용합니다.
-
-````bash
-background-color: #abcdef;
-````
-
-|속성 값|속성 설명|
-|:---:|:---:|
-|색상값|색상명, HEX값, RGB값, HSL값, RGBA값, HSLA값|
-|transparent|투명 (기본값)|
-
-<br />
-
-## 02. background-image
-▶ 요소의 배경에 들어갈 이미지를 지정하는 속성으로 아래와 같은 형식처럼 사용합니다.<br />
-용량이 클 경우 속도 저하의 원인이 될 수 있기 때문에 해상도가 큰 이미지는 꼭 필요한 상황이 아니면 지양하는 것이 좋습니다.
-
-````bash
-background-image: url(img/bgimg.png);
-````
-
-|속성 값|속성 설명|
-|:---:|:---:|
-|url(~)|이미지의 경로와 파일명을 기술함|
-|none|배경 이미지 없음 (기본값)|
-
-<br />
-
-## 03. background-repeat
-▶ 배경 이미지를 어떻게 반복시킬지 지정하는 속성으로 아래와 같은 형식처럼 사용합니다.
-
-````bash
-background-repeat: no-repeat;
-````
-
-|속성 값|속성 설명|
-|:---:|:---:|
-|repeat|배경 이미지를 가로, 세로 반복하여 배치 (기본값)|
-|no-repeat|배경 이미지를 한 개만 배치|
-|repeat-x|배경 이미지를 가로로만 반복 배치|
-|repeat-y|배경 이미지를 세로로만 반복 배치|
-|space|배경 이미지를 반복하다가 마지막 이미지가 가로로 잘리지 않도록 배치하기 위해 이미지 사이가 벌어짐|
-|round|배경 이미지를 반복하다가 마지막 이미지가 세로로 잘리지 않도록 배치하기 위해 이미지가 납작하게 찌그러짐|
-
-<br />
-▶ 만약 배경 이미지가 요소 안에 있는 콘텐츠들과 겹치지 않도록 하고 싶을 경우 padding속성과 함께 사용하면 됩니다.<br />
-※ padding: 100px -> 상하, 좌우 모두 100px 만큼의 여백을 두라는 의미
-
-````bash
-padding: 100px
-background-repeat: no-repeat;
-````
-<br />
-
-## 04. background-position
-▶ 배경 이미지를 원하는 위치로 옮겨주는 속성으로 아래와 같은 형식처럼 사용합니다.<br />
-한 개만 배치할 경우 기본적으로는 좌측 상단에 나타나는데 background-position을 이용하면 가로, 세로 위치 지정이 가능합니다.
-
-````bash
-background-position: 50% top;
-````
-
-|위치|속성 설명|
-|:---:|:---:|
-|가로 위치|left, right, center, px값 등 (기본값: left)|
-|세로 위치|top, bottom, center(middle아님), px값, %값 등 (기본값: top)|
-
-<br />
-▶ 만약 배경 이미지가 요소 안에 있는 콘텐츠들과 겹치지 않도록 하고 싶을 경우 padding속성과 함께 사용하면 됩니다.<br />
-※ padding: 100px -> 상하, 좌우 모두 100px 만큼의 여백을 두라는 의미
-
-````bash
-padding: 100px
-background-position: 50% top;
-````
-<br />
-
-## 05. background-attachment
-▶ 배경 이미지를 요소 내에 고정시킬지, 화면에 고정시킬지 지정하는 속성으로 아래와 같은 형식처럼 사용합니다.
-
-````bash
-background-attachment: fixed;
-````
-
-|속성 값|속성 설명|
-|:---:|:---:|
-|scroll|배경 이미지가 화면을 스크롤하면 따라감 (기본값)|
-|fixed|배경 이미지가 화면을 스크롤해도 따라가지 않음|
-
-<br />
-
-## 06. background-size
-▶ CSS3에서 배경 이미지의 크기를 변경하는 속성으로 아래와 같은 형식처럼 사용합니다.
-
-````bash
-background-size: 120px(=가로) 90px(=세로);
-````
-
-|속성 값|속성 설명|
-|:---:|:---:|
-|background-size: 120px 90px;|배경 이미지의 가로 크기 80px,세로 크기 60px라는 의미|
-|background-size: 50% 100%;|배경 이미지의 가로 크기 50%,세로 크기 100%라는 의미|
-|background-size: auto;|배경 이미지를 원래 크기로 배치하고 남는 공간은 비움|
-|background-size: contain;|배경 이미지를 잘리지 않도록 배치하고 남는 공간은 비움|
-|background-size: cover;|배경 이미지를 빈 공간없이 요소에 꽉 채우고 나머지는 잘림|
-
-<br />
-
-## 07. background-origin
-▶ CSS3에서 배경 이미지의 시작점을 정하는 속성으로 아래와 같은 형식처럼 사용합니다.
-
-````bash
-background-origin: border-box;
-````
-
-|속성 값|속성 설명|
-|:---:|:---:|
-|border-box|배경 이미지가 테두리 좌측 상단 모퉁이에서 시작함|
-|padding-box|배경 이미지가 안여백의 좌측 상단 모퉁이에서 시작함 (기본값)|
-|content-box|배경 이미지가 콘텐츠의 좌측 상단부터 시작함|
-
-<br />
-
-## 08. background-clip
-▶ CSS3에서 배경의 영역을 지정하는 속성으로 아래와 같은 형식처럼 사용합니다.
-
-````bash
-background-clip: border-box;
-````
-
-|속성 값|속성 설명|
-|:---:|:---:|
-|border-box|배경이 테두리를 포함한 영역에 배치 (기본값)|
-|padding-box|배경이 테두리를 제외한 안쪽 영역에 배치|
-|content-box|배경이 안여백을 제외한 콘텐츠 영역에만 배치|
-
-<br />
-
-## 09. Image Sprit
-▶ 이미지가 많아지면 속도가 느려지는 단점을 보완하기 위해 사용하는 속성으로 아래와 같은 형식처럼 사용합니다.<br />
-Image Sprit은 사용하는 여러 이미지들을 하나로 저장한 후 background-position을 이용하여 잘라 사용합니다.
+## 01. width, height
+▶ width는 요소의 가로 크기, height는 요소의 세로 크기를 말하며, 기본적으로 여백과 테두리는 포함되지 않습니다.<br />
+px, %, em 등 각종 단위를 함께 사용할 수 있고, min과 max를 사용해 최소, 최대값을 지정할 수 있습니다.
 
 ````css
-.nav {
-  display: flex;
-}
-
-.nav a {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-image: url('sprites.png');
-}
-
-.home {
-  background-position: 0 0; /* 스프라이트 이미지 내에서 홈 아이콘의 위치 */
-}
-
-.about {
-  background-position: -40px 0; /* 스프라이트 이미지 내에서 about 아이콘의 위치 */
-}
-
-.contact {
-  background-position: -80px 0; /* 스프라이트 이미지 내에서 contact 아이콘의 위치 */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Width와 Height CSS 예제</title>
+<style>
+    /* 스타일링을 위한 CSS 코드 */
+    .box {
+        width: 200px; /* 너비 200px 지정 */
+        height: 150px; /* 높이 150px 지정 */
+        background-color: #f0f0f0; /* 배경색 지정 */
+    }
+</style>
+</head>
+<body>
+    <!-- div 요소에 box 클래스를 적용하여 스타일을 적용함 -->
+    <div class="box">
+        이 상자의 너비는 200px이고 높이는 150px입니다.
+    </div>
+</body>
+</html>
 ````
 
-🔔 위의 코드 예시는 sprites.png라는 이미지 스프라이트를 사용하여 네비게이션 메뉴 아이콘을 표현하고 있습니다.<br />
-각 아이콘은 background-position 속성을 사용하여 스프라이트 이미지 내에서의 위치를 지정하고 있으며, 각각의 링크 요소에는 스프라이트 이미지 내에서의 위치를 지정하고 있습니다.
+|속성 값|속성 설명|
+|:---:|:---:|
+|width|요소의 가로폭|
+|height|요소의 세로(높이)폭|
+|min-width: 1000px;|요소의 가로폭을 1000px이상으로 지정함을 의미|
+|min-height: 1000px;|요소의 높이값을 1000px이상으로 지정함을 의미|
+|max-width: 1000px;|요소의 너비값을 1000px이하로 지정함을 의미|
+|max-height: 1000px;|요소의 높이값을 1000px이하로 지정함을 의미|
+
+🔔<br />
+일정 크기 이상의 공간을 유지하고자 하려면 min-width, min-height 지정<br />
+브라우저를 늘려도 일정 크기 이상 늘어나지 않도록 하려면 max-width, max-height 지정
 <br />
 
-## 10. 배경에 gradient 적용하기
-▶ CSS3에서는 배경에 gradient를 적용하여 다양한 효과를 줄 수 있으며, 형식에는 여러개가 있습니다.<br />
-아래는 예시들입니다.
-<br />
-① 기본형 : 기본형은 위에서 아래로 색상을 채워주며, 세로 방향입니다.
-
-````bash
-background: linear-gradient(red, yellow, green);
-````
-<br />
-② to top : 색상값 앞에 'to top'을 사용하면 시작위치가 아래에서 위로 변경됩니다.
-
-````bash
-background: linear-gradient(to top, red, yellow, green);
-````
-<br />
-③ to right / to left : 기본형인 세로 방향을 가로 방향으로 바꿀 경우 색상값 앞에 to right나 to left를 사용합니다.
-
-````bash
-background: linear-gradient(to right / to left, red, yellow, green);
-````
-<br />
-④ to bottom right : 사선 방향으로 변경할 경우 색상값 앞에 사용하면 되며, 좌측 상단->우측 하단 방향으로 책상이 채워집니다.
-
-````bash
-background: linear-gradient(to bottom right, red, yellow, green);
-````
-<br />
-⑤ edg : 각도를 변경할 경우 edg를 사용하여 원하는 각도 값을 사용합니다. 이 때 각도는 아래가 0°이며, 시계방향으로 돌아가며 채워집니다.
-
-````bash
-background: linear-gradient(200edg, red, yellow, green);
-````
-<br />
-⑥ 패턴 반복 : 일정한 패턴의 gradient를 반복시킬 경우 repeating-linear-gradient를 사용합니다.
-
-````bash
-background: repeating-linear-gradient(red, yellow, green);
-````
-<br />
-⑦ 타원형 : radial-gradient를 사용하면 원형으로 변경됩니다. 기본형은 타원형이며, 안쪽에서 바깥으로 색상이 채워집니다.
-
-````bash
-background: radial-gradient(red, yellow, green);
-````
-<br />
-⑧ 정원형 : 색상값 앞에 circle을 사용하면 타원형이 아닌 정원형으로 변경됩니다.
-
-````bash
-background: radial-gradient(circle, red, yellow, green);
-````
-<br />
-⑨ 원형 패턴 반복 : 일정한 원형 패턴의 gradient를 반복시킬 경우 repeating-radial-gradient를 사용합니다.
-
-````bash
-repeating-radial-gradient(red, yellow, green);
-````
-<br />
-⑩ 색상 영역 변경 : 색상 옆에 %를 붙이면 원하는 영역으로 변경이 가능합니다.
-
-````bash
-background: radial-gradient(red 5%, yellow 10%, green 15%);
-````
-<br />
-
-## 11. multiple background 기능
-▶ CSS3에서는 여러 개의 배경 이미지를 동시에 적용할 수 있습니다.<br />
-배경 이미지의 위치, 반복 여부 등 개수만큼 지정이 가능하며 이 경우 먼저 기재된 이미지가 가장 앞에 배치되고 뒤로 갈수록 바닥에 배치됩니다.
+## 02. padding
+▶ padding은 요소의 안쪽 여백인 내용과 테두리 사이의 여백을 의미합니다.<br />
+주의할 점은 padding의 여백값은 width에 포함되지 않는다는 점입니다.
 
 ````css
-.container {
-  height: 400px;
-  background-image: url('background1.jpg'), url('background2.jpg'); /* 두 개의 배경 이미지를 설정 */
-  background-size: cover, contain; /* 각 배경 이미지의 크기 설정 */
-  background-position: center, top right; /* 각 배경 이미지의 위치 설정 */
-  background-repeat: no-repeat; /* 배경 이미지 반복 설정 */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Padding을 사용한 CSS 예제</title>
+<style>
+    /* 스타일링을 위한 CSS 코드 */
+    .container {
+        padding: 10px 20px 30px 40px; /* 상, 우, 하, 좌 순으로 안쪽 여백 지정 */
+        background-color: #f0f0f0; /* 배경색 지정 */
+    }
+</style>
+</head>
+<body>
+    <!-- .container 클래스를 가진 div 요소 -->
+    <div class="container">
+            이 텍스트 주위에는 padding 속성을 사용하여 여백이 적용됩니다.
+        </div>
+    </div>
+</body>
+</html>
+````
+
+|속성 값|속성 설명|
+|:---:|:---:|
+|padding: 10px;|위, 아래, 왼, 오 각각 10px의 여백을 준다는 의미|
+|padding: 10px 20px;|위&아래: 10px / 왼&오: 20px의 여백을 준다는 의미|
+|padding: 10px 20px 30px;|위: 10px / 왼&오: 20px / 아래: 30px의 여백을 준다는 의미|
+|padding: 10px 20px 30px 40px;|위: 10px / 오: 20px / 아래: 30px / 왼: 40px의 여백을 준다는 의미|
+|padding-top: 10px;|위: 10px의 여백을 준다는 의미|
+|padding-right: 10px;|오: 10px의 여백을 준다는 의미|
+|padding-bottom: 10px;|아래: 10px의 여백을 준다는 의미|
+|padding-left: 10px;|왼: 10px의 여백을 준다는 의미|
+
+<br />
+
+## 03. margin
+▶ margin 요소의 바깥 여백인 테두리와 다음 박스 사이의 여백을 의미합니다.<br />
+주의할 점은 margin은 여백값은 width에 포함되지 않는다는 점이며, margin을 좌우로 주면 가로 길이가 줄어듭니다.
+
+````css
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Margin을 사용한 CSS 예제</title>
+<style>
+    /* 스타일링을 위한 CSS 코드 */
+    .box {
+        width: 200px; /* 너비 200px 지정 */
+        height: 150px; /* 높이 150px 지정 */
+        background-color: #f0f0f0; /* 배경색 지정 */
+        margin: 20px; /* 바깥 여백 지정 */
+    }
+</style>
+</head>
+<body>
+    <!-- div 요소에 box 클래스를 적용하여 스타일을 적용함 -->
+    <div class="box">
+        width와 height 속성을 사용하여 200px × 150px 크기의 상자가 만들어졌고,
+        이 상자 주위에는 20px의 바깥 여백이 적용됩니다.
+    </div>
+</body>
+</html>
+````
+
+|속성 값|속성 설명|
+|:---:|:---:|
+|margin: 10px;|위, 아래, 왼, 오 각각 10px의 여백을 준다는 의미|
+|margin: 10px 20px;|위&아래: 10px / 왼&오: 20px의 여백을 준다는 의미|
+|margin: 10px 20px 30px;|위: 10px / 왼&오: 20px / 아래: 30px의 여백을 준다는 의미|
+|margin: 10px 20px 30px 40px;|위: 10px / 오: 20px / 아래: 30px / 왼: 40px의 여백을 준다는 의미|
+|margin-top: 10px;|위: 10px의 여백을 준다는 의미|
+|margin-right: 10px;|오: 10px의 여백을 준다는 의미|
+|margin-bottom: 10px;|아래: 10px의 여백을 준다는 의미|
+|margin-left: 10px;|왼: 10px의 여백을 준다는 의미|
+
+🔔<br />
+margin은 세로의 겹침이 발생할 수 있는데, 이 때 두 박스 사이의 간격은 둘 중 가장 큰 값으로 지정이 됩니다.
+<br />
+▶ 추가로 margin: 0 auto;를 사용하면 중앙정렬을 할 수 있으며, 아래와 같은 형식처럼 사용합니다.
+
+````css
+.box_inner {
+  width: 1000px;
+  margin: 0 auto;
 }
 ````
 
-🔔 위의 코드 예시는 .container 요소에 두 개의 배경 이미지를 설정하고 있습니다. 첫 번째 배경은 background1.jpg이고, 두 번째 배경은 background2.jpg입니다.<br />
-각 배경 이미지의 크기와 위치는 background-size, background-position 속성을 사용하여 설정하였으며, background-repeat: no-repeat;로 배경 이미지의 반복을 막았습니다.
+<br />
+
+## 04. border
+▶ border는 박스의 테두리를 말하며, 다양한 방식으로 테두리를 지정할 수 있습니다.
+
+① 테두리 선 종류
+
+|선의 종류|속성 설명|
+|:---:|:---:|
+|solid|실선|
+|dotted|점선|
+|dashed|긴 점선|
+|double|두 줄 실선 (굵기가 적어도 3px이상)|
+|none|테두리 없음|
+|groove, ridge, inset, outset|각종 액자 형태의 테두리|
+
+<br />
+② style, width, color
+
+|속성 값 예문|속성 설명|
+|:---:|:---:|
+|border-color: blue;|테두리 색상 파란색으로 지정함을 의미 (색상명, HEX, RGB, HSL, RGBA, HSLA 모두 가능)|
+|border-width: 2px;|테두리 굵기를 2px로 지정함을 의미|
+|border-style: solid;|테두리 선을 실선으로 지정함을 의미|
+|border-top: 1px solid red;|위쪽 테두리만 1px 굵기의 빨간색 실선으로 지정함을 의미|
+|border-left: 1px solid red;|왼쪽 테두리만 1px 굵기의 빨간색 실선으로 지정함을 의미|
+|border-right: 1px solid red;|오른쪽 테두리만 1px 굵기의 빨간색 실선으로 지정함을 의미|
+|border: 1px solid red;|테두리 사방 모두 1px 굵기의 빨간색 실선으로 지정함을 의미|
+
+<br />
+③ 둥근 테두리 모서리 : border-radius를 사용하면 테두리를 둥글게 만들 수 있으며, 아래와 같은 형식처럼 사용합니다.
+
+````bash
+border-radius: 5px; // 값이 하나인 경우 네 모서리 모두 동일하게 적용
+````
+
+````bash
+border-radius: 10px 20px 30px 40px; // 값이 네 개인 경우 좌측 상단을 시작점으로 하여 시계방향 순으로 적용
+````
+
+<br />
+④ 테두리에 무늬 입히기 : border-image를 사용하면 테두리를 도형 패턴으로 만들 수 있으며, 종류는 3가지가 있습니다.
+
+````bash
+border-image: url(boder.png) 20 round;
+border-image: url(boder.png) 20 repeat;
+border-image: url(boder.png) 20 stretch;
+````
+
+<br />
+
+## 05. outline
+▶ outline은 border영역 외곽에 박스의 테두리를 지정하는 속성으로 style, width, color라는 속성들을 사용할 수 있으나,<br />
+네 면이 공동으로 적용되는 특징이 있어 위, 아래, 왼쪽, 오른쪽 따로 적용은 불가능합니다.
+
+````bash
+outline: 5px solid red;
+````
+
+▶ border와 outline 사이의 간격을 주고 싶을 경우, outline-offset을 사용하면 됩니다.
+
+````bash
+outline-offset: 5px;
+````
+
+<br />
+
+## 06. box-sizing
+▶ box-sizing은 box의 크기를 의미하나 기본적으로 width, height 값에 padding, border 값은 포함되지 않습니다.<br />
+따라서, width 값이 100%로 설정이 되어 있다면 padding이나 border 속성을 추가할 수 없습니다.<br />
+때문에 CSS에서는 box의 크기가 여백과 테두리를 포함해도 원래의 크기를 넘지않도록 하기 위해 box-sizing을 사용합니다.
+
+````bash
+box-sizing: boeder-box;
+````
+
+|속성 값 예문|속성 설명|
+|:---:|:---:|
+|box-sizing: content-box;|요소의 전체 크기에 padding, border 값을 포함 시킴|
+|box-sizing: boeder-box;|요소의 전체 크기에 padding, border 값을 포함시키지 않음|
+
+<br />
+
+## 07. box-shadow
+▶ box-shadow는 CSS에서 그림자를 만들어주는 요소입니다.
+
+````bash
+box-shadow: 8px 15px 10px 7px inset rgba(0, 0, 50, 0.4);
+````
+
+|속성 값 예시|속성 설명|
+|:---:|:---:|
+|8px|그림자가 원본과 가로로 떨어진 간격|
+|15px|그림자가 원본과 tp로로 떨어진 간격|
+|10px|그림자의 흐릿한 정도(=blur)|
+|7px|그림자의 확장|
+|inset|그림자가 안쪽에 나타남|
+|rgba(0, 0, 50, 0.4)|그림자의 색상|
+
+<br />
+
+## 08. resize
+▶ resize는 마우스로 box의 모서리를 잡고 드래그했을 때 크기 조절의 가능여부를 지정해주는 요소입니다.
+
+````bash
+resize: both;
+````
+
+|속성 값|속성 설명|
+|:---:|:---:|
+|horizontal|박스의 가로방향으로 크기 조절 가능|
+|vartical|박스의 세로방향으로 크기 조절 가능|
+|both|박스의 가로, 세로 양방향으로 크기 조절 가능|
+|none|박스의 크기 조절 불가능|
+
+<br />
+
+## 09. appearance
+▶ appearance는 CSS 속성 중 하나로, 표준 컨트롤 요소의 외관을 사용자 지정하는 데 사용됩니다.<br />
+이 속성은 주로 웹 폼 요소를 스타일링하는 데 사용되며, 요소의 기본적인 스타일을 브라우저의 네이티브 스타일 대신 사용자가 지정한 스타일로 변경할 수 있습니다.
+
+|속성 값|속성 설명|
+|:---:|:---:|
+|auto|브라우저가 요소의 외관을 결정 (기본값)|
+|none|브라우저의 네이티브 스타일을 사용하지 않고 외관을 사용자가 직접 스타일링할 수 있도록 함|
+|menulist-button|셀렉트 박스의 버튼 부분을 스타일링할 때 사용|
+|textfield|텍스트 필드 요소를 스타일링할 때 사용|
+|searchfield|검색 필드 요소를 스타일링할 때 사용|
+
+````css
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Button with Appearance</title>
+<style>
+    /* 스타일링을 위한 CSS 코드 */
+    .custom-button {
+        appearance: none; /* 네이티브 스타일을 사용하지 않음 */
+        background-color: #007bff; /* 배경색 */
+        color: #fff; /* 글자색 */
+        border: none; /* 테두리 없음 */
+        padding: 10px 20px; /* 내부 여백 */
+        border-radius: 5px; /* 테두리 반경 */
+        cursor: pointer; /* 커서 모양 */
+        font-size: 16px; /* 글자 크기 */
+    }
+</style>
+</head>
+<body>
+    <!-- appearance: none을 사용하여 네이티브 스타일을 사용하지 않도록 설정  -->
+</body>
+</html>
+````
