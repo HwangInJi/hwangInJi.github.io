@@ -10,7 +10,7 @@ published: true
 sitemap: true
 ---
 
-## 자바스크립트 이미지 레이아웃 애니메이션 효과
+# 자바스크립트 이미지 레이아웃 애니메이션 효과
 
 ![Frame 37](https://github.com/HwangInJi/class2024/assets/163365140/ce292624-b2d9-41fc-a66e-9435c4ab2ed8)
 
@@ -20,7 +20,7 @@ sitemap: true
 
 <br>
 
-# 1. slider영역에 sliderWrap 영역 추가하기
+## 1. slider영역에 sliderWrap 영역 추가하기
 ▶ 가장 먼저 만들고자 하는 레이아웃 영역을 만들었다면 slider영역에 'sliderWrap'이라는 큰 틀의 class를 만들어줍니다.
 
 
@@ -32,7 +32,7 @@ sitemap: true
 
 <br>
 
-# 2. sliderWrap에 원하는 이미지 수 만큼 img 추가하기
+## 2. sliderWrap에 원하는 이미지 수 만큼 img 추가하기
 ▶ 큰 틀을 만들었다면 그 다음엔 'sliderWrap' 안에 추가하고자 하는 이미지 개수만큼 img 링크를 추가해줍니다. 저는 총 3장의 이미지를 넣어보았어요!<br>
 이 때 span태그를 추가해 이름을 지정해준다면 좀 더 헷갈리지 않을 수 있겠죠?
 
@@ -58,7 +58,7 @@ sitemap: true
 
 <br>
 
-# 3. style css 추가 입력하기
+## 3. style css 추가 입력하기
 ▶ 기존 레이아웃에 새로운 'sliderWrap' 이라는 영역이 추가되었으니 style css에도 수정이 필요하겠죠?<br>
 먼저 slider안에 img가 들어가되, 영역을 벗어나면 안되기 때문에 우선 부모라는 큰 틀인 sliderWrap에 'position: relative;'를 이용해 상대적인 위치를 지정해줍니다.
 
@@ -116,7 +116,7 @@ left: 0;과 top: 0;을 주었기 때문에 해당 요소는 부모 요소의 좌
 
 <br>
 
-# 4. jQuery를 활용해 애니메이션 효과주기
+## 4. jQuery를 활용해 애니메이션 효과주기
 ▶ 이제 마지막 단계로 script에 jQuery 코드를 활용해 애니메이션 이벤트를 실행시켜주면 됩니다.<br>
 
 먼저 큰 틀인 '$(function () {});' 영역은 jQuery의 문서 준비 이벤트(Document Ready Event)입니다. 즉, HTML 문서가 완전히 로드되고 준비된 후에 실행된다는 것을 의미합니다.
