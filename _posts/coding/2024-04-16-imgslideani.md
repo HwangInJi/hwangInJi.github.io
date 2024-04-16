@@ -3,7 +3,7 @@ layout: post
 title: jQuery로 이미지 슬라이드 애니메이션 넣기
 date: 2024-04-16 17:29 +0900
 description: jQuery 이미지 슬라이드 애니메이션에 대해서 알아보기
-image: ../assets/img/javaani.jpg
+image: ../assets/img/sliderani.jpg
 category: jQuery
 tags: jQuery 제이쿼리 애니메이션
 published: true
