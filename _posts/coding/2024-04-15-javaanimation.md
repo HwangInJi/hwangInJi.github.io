@@ -4,7 +4,7 @@ title: jQuery로 이미지 레이아웃 애니메이션 넣기
 date: 2024-04-15 17:29 +0900
 description: jQuery 이미지 애니메이션에 대해서 알아보기
 image: ../assets/img/javaani.jpg
-category: 제이쿼리
+category: jQuery
 tags: jQuery 제이쿼리 애니메이션
 published: true
 sitemap: true
@@ -14,7 +14,7 @@ sitemap: true
 
 ![Frame 37](https://github.com/HwangInJi/class2024/assets/163365140/ce292624-b2d9-41fc-a66e-9435c4ab2ed8)
 
-빨간 표시된 슬라이드 레이아웃 영역에 이미지를 넣고 번갈아가며 보여지는 애니메이션 효과를 자바스크립트로도 간단하게 넣을 수 있다는 사실 알고 계신가요??<br>
+빨간 표시된 슬라이드 레이아웃 영역에 이미지가 한장씩 깜빡이며 보여지는 애니메이션 효과를 자바스크립트로도 간단하게 넣을 수 있다는 사실 알고 계신가요??<br>
 
 지금부터 알려드리는 방법으로 한번 따라해보세요!
 
@@ -141,7 +141,7 @@ setInterval 함수는 일정한 주기로 특정 작업을 반복적으로 수�
 
 <br>
 
-▶ 이제 각각의 이미지가 3초 동안 보여지도록 지정해줄건데, 이 때에는 수학적인 개념도 살짝 필요합니다.<br>
+▶ 이제부턴 수학적인 개념도 살짝 필요합니다.<br>
 우선 현재 이미지를 currentIndex로 지정했기 때문에 그 다음에 나오는 이미지는 nextIndex로 지정해줍니다. 그 다음 제가 넣은 이미지는 총 3장으로 변수값이 [0], [1], [2]이기 때문에 0, 1, 2가 무한 반복될 수 있게 currentIndex가 1씩 늘어날 때 마다 나머지 값이 0, 1, 2가 될 수 있게 3으로 나눠줍니다. 
 
 ````javascript
