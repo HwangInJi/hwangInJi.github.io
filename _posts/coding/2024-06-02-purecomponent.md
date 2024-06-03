@@ -10,7 +10,7 @@ published: true
 sitemap: true
 ---
 
-### 1. Pure Component란
+### 1. Pure Component란?
 
 ▶ Pure Component는 React에서 컴포넌트의 성능을 최적화하기 위해 사용되는 중요한 개념 중 하나입니다.<br>
 Pure Component는 컴포넌트의 상태 또는 props가 변경되지 않으면 불필요한 렌더링을 방지하여 성능을 최적화하며, 이를 통해 애플리케이션의 효율성을 크게 향상시킬 수 있습니다.
