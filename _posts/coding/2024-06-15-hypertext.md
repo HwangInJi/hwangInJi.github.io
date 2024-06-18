@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 하이퍼텍스트(Hypertext)
-date: 2024-06-14 13:22 +0900
+date: 2024-06-15 16:22 +0900
 description: 하이퍼텍스트(Hypertext)에 대해 알아보기
 image: ../assets/img/hypertext.jpg
 category: ETC
