@@ -3,7 +3,7 @@ layout: post
 title: 이벤트 위임
 date: 2024-06-17 18:22 +0900
 description: 이벤트 위임에 대해 알아보기
-image: ../assets/img/homepages.jpg
+image: ../assets/img/delegation.jpg
 category: ETC
 tags: Event Delegation
 published: true
