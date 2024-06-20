@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Git & Github의 차이
-date: 2024-06-20 16:33 +0900
+date: 2024-06-20 11:33 +0900
 description: Git & Github의 차이에 대해 알아보기
 image: ../assets/img/gitgithub.jpg
 category: ETC
