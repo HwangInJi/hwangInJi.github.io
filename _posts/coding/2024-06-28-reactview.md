@@ -1,10 +1,9 @@
-
 ---
 layout: post
 title: CSR과 SSR에 대해 알아보기
-date: 2024-06-27 16:50 +0900
+date: 2024-06-28 10:50 +0900
 description: CSR과 SSR의 차이와 장단점에 대해 알아보기
-image: ../assets/img/csrssr.jpg
+image: ../assets/img/reactview.jpg
 category: ETC
 tags: CSR SSR
 published: true
