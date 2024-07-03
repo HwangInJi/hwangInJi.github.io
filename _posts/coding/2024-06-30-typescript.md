@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 자바스크립트 타입스크립트
-date: 2024-0-30 13:35 +0900
+date: 2024-06-30 13:35 +0900
 description: 자바스크립트에 대해 알아보기
 image: ../assets/img/typescript.jpg
 category: JavaScript
